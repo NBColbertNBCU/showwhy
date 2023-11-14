@@ -1,6 +1,1 @@
-FROM mcr.microsoft.com/cbl-mariner/base/nodejs:16
-
-RUN npm i -g yarn
-WORKDIR /app
-
-CMD ["./scripts/start-frontend.sh"]
+FROM gcr.io/nbcu-ds-consci-sandbox-001/peacock_showwhy_frontend:latest
