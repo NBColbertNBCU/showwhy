@@ -1,8 +1,8 @@
 #!/bin/sh
 registry=$1
 
-docker tag backend $registry/backend
-docker push $registry/backend
+podman tag backend $registry/backend
+podman push $registry/backend
 
-docker tag app-shell $registry/app-shell
-docker push $registry/app-shell
+podman tag app-shell $registry/app-shell
+podman push $registry/app-shell

@@ -8,4 +8,4 @@ else
 fi
 
 echo "building backend image..."
-docker build -t backend python/backend --build-arg REGISTRY=$custom_docker_registry
+podman build -t backend python/backend --build-arg REGISTRY=$custom_docker_registry
